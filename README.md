@@ -7,6 +7,8 @@
 
 + 두 코드간 유사성(동일 결과물 산출 가능한지) 여부를 판단하는 모델 개발 
 
+<img width="994" alt="image" src="https://user-images.githubusercontent.com/30611947/192323039-d40a1e12-0d12-4572-8912-6def5bb6711d.png">
+
 ----
 ## Summary
 + ### Data Processing
