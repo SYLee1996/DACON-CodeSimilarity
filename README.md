@@ -16,16 +16,14 @@
       + '주석 -> 삭제'
       + '    ' -> tab 변환
       + 다중 개행 -> 한 번으로 변환
-      + 일정 길이가 넘는 token은 truncation으로 인해 버려지기 때문에 일정 길이 이상이면 제외
+      + 일정 길이가 넘는 token은 truncation으로 인해 버려지기 때문에 일정 길이 이상이면 해당 데이터 제외
 
 
     + [code1, code2] pair가 훈련에 사용에 됐는데, [code1, code3]이 validation 학습에 들어가면 문제가 생길 여지가 존재 -> pair 구성 전 train, validation 분리
 
     + BM25 알고리즘을 사용하여 최대한 비슷한 코드를 선택 후 높은 순서로 정렬 후 다른 문제를 푸는 코드들만 negative pair로 구성
 
-    + Parameter copy를 통해, Pre-trained model의 레이어를 깊게 쌓음
-
-    + 학습 시간이 길기 때문에 학습 속도 개선을 위해 Uniform Length Batch 시도
+    + 
 
 
 ----
@@ -34,13 +32,13 @@
     + Pre-trained electra, MiniLM, CodeBERTa, GraphCodeBERT 모델들을 사용함 
    
       + 마이크로소프트의 (Graph)CodeBert 모델의 경우, 파이썬, 자바스크립트 등의 소스 코드(사전 학습 데이터가 파인 튜닝에 사용되는 데이터와 비슷함)를 바탕으로 토크나이저가 만들어지고 또 사전 학습된 상태라서 토크나이징이 짧게 잘 이뤄질 수 있음
-      + 레이어 복제(Parameter copy)를 통해 Pre-trained model의 레이어를 늘림 
+      + 레이어 복제(Parameter copy)를 통해 Pre-trained model의 레이어를 깊게 쌓음
       + Soft voting ensemble 수행 
   
   </br>
 
     + Model techniques
-      + Dataloder : 속도 향상을 위한 UniformLengthBatchingSampler 사용
+      + Dataloder : 학습 시간이 길기 때문에 학습 속도 개선을 위해 Uniform Length Batch 시도
       + scheduler: CosineAnnealingLR
       + Loss : SmoothCrossEntropyLoss 사용
       + optimizer : AdamW 사용
