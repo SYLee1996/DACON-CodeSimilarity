@@ -1,6 +1,6 @@
 # DACON-CodeSimilarity - 코드 유사성 판단 AI 경진대회
 
-## Pre-trained CodeBERTa, GraphCodeBERT, electra, MiniLM Ensemble
+##  | 0.95684 | CodeBERTa+GraphCodeBERT+electra+MiniLM Ensemble
 
 + 주최 및 주관: 데이콘 
 + 링크: https://dacon.io/competitions/official/235900/overview/description
