@@ -34,9 +34,7 @@
     + Pre-trained electra, MiniLM, CodeBERTa, GraphCodeBERT 모델들을 사용함 
    
       + 마이크로소프트의 (Graph)CodeBert 모델의 경우, 파이썬, 자바스크립트 등의 소스 코드(사전 학습 데이터가 파인 튜닝에 사용되는 데이터와 비슷함)를 바탕으로 토크나이저가 만들어지고 또 사전 학습된 상태라서 토크나이징이 짧게 잘 이뤄질 수 있음
-    
       + 레이어 복제(Parameter copy)를 통해 Pre-trained model의 레이어를 늘림 
-      
       + Soft voting ensemble 수행 
   
   </br>
