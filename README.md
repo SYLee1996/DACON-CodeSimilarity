@@ -16,7 +16,7 @@
       + '주석 -> 삭제'
       + '    ' -> tab 변환
       + 다중 개행 -> 한 번으로 변환
-      + 일정 길이가 넘는 tokend은 truncation으로 인해 버려지기 때문에 일정 길이 이상이면 제외
+      + 일정 길이가 넘는 token은 truncation으로 인해 버려지기 때문에 일정 길이 이상이면 제외
 
 
     + [code1, code2] pair가 훈련에 사용에 됐는데, [code1, code3]이 validation 학습에 들어가면 문제가 생길 여지가 존재 -> pair 구성 전 train, validation 분리
