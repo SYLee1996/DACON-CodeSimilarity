@@ -35,7 +35,7 @@
   </br>
 
     + Model techniques
-      + Dataloder : 학습 시간이 길기 때문에 학습 속도 개선을 위해 Uniform Length Batch 시도
+      + Dataloder : 학습 시간이 길기 때문에 학습 속도 개선을 위해 Uniform(Smart) Length Batch 시도
       + scheduler: CosineAnnealingLR
       + Loss : SmoothCrossEntropyLoss 사용
       + optimizer : AdamW 사용
