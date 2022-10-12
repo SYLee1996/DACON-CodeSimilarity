@@ -67,7 +67,10 @@
 + ## 개선할 점
   
   + contrastive learning 시도하여 다양한 방식의 접근 방식 고려
-  + 파인튜닝 데이터로 MLM 모델의 vocab에 데이터 추가하여 MLM 학습 후 파인튜닝 하는 방법(DAPT) 방식 고려
-  + Pre-trained MLM과 유사한 방식으로 문제를 풀어나가게 변경 -> classification 문제를 close task로 변경하는 방식(Pattern Exploiting Training, PET) 고려
+  + 파인튜닝 데이터로 MLM 모델의 vocab에 데이터 추가하여 MLM 학습 후 파인튜닝 하는 방법(DAPT) 방식 고려 
+     + [Don't Stop Pretraining: Adapt Language Models to Domains and Tasks](https://arxiv.org/abs/2004.10964)
+  + Pre-trained MLM과 유사한 방식으로 문제를 풀어나가게 변경 -> classification 문제를 cloze task로 변경하는 방식(Pattern Exploiting Training, PET) 고려
+     + [Exploiting Cloze Questions for Few Shot Text Classification and Natural
+Language Inference](https://aclanthology.org/2021.eacl-main.20.pdf)
   + 토크나이징 시 512개를 넘어가서 truncation 하는 경우 왼쪽에서 잘라내기 -> 많은 코드들이 라이브러리 임포트 시 주석을 다는 경우가 많음
   + "import"가 포함된 line은 제거 -> 어차피 본문 코드에 해당 라이브러리가 사용되기 때문
