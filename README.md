@@ -66,7 +66,7 @@
   
   + contrastive learning 시도하여 다양한 방식의 접근 방식 고려
   + 파인튜닝 데이터로 MLM 모델의 vocab에 데이터 추가하여 MLM 학습 후 파인튜닝 하는 방법(DAPT) 방식 고려
-  + Pre-trained MLM과 유사한 방식으로 문제를 풀어나가게 변경 -> classification 문제를 cloze task로 변경하는 방식(Pattern Exploiting Training, PET) 고려
+  + Pre-trained MLM과 유사한 방식으로 문제를 풀어나가게 변경 -> classification 문제를 close task로 변경하는 방식(Pattern Exploiting Training, PET) 고려
   + 여러 언어로 학습 후 여러 언어로 inference 진행하여 ensemble(Multi-lingual) -> 해당 방법은 Back-translation 처럼 다른 NLP task에 적용 가능할 것 같아보임
   + 토크나이징 시 512개를 넘어가서 truncation 하는 경우 왼쪽에서 잘라내기 -> 많은 코드들이 라이브러리 임포트 시 주석을 다는 경우가 많음
   + "import"가 포함된 line은 제거 -> 어차피 본문 코드에 해당 라이브러리가 사용되기 때문
