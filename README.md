@@ -11,7 +11,7 @@
 
 ----
 ## Summary
-+ ### Data Processing
++ ### Data Preprocessing
     + 간단한 전처리 수행 
       + '주석 -> 삭제'
       + '    ' -> tab 변환
